@@ -58,7 +58,7 @@ client.subscribe("stat/tasmota_switch/STATUS8")
 client.subscribe("tele/tasmota_switch/SENSOR")
 
 # Message is retained by true at end
-#client.publish("cmnd/tasmota_switch/POWER", "toggle")
+client.publish("cmnd/tasmota_switch/POWER", "toggle")
 client.publish("cmnd/tasmota_switch/STATUS", "8")
 
 """
